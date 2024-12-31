@@ -1,11 +1,13 @@
 public class Main {
-    Inventory inventory = new Inventory();
-    
-    public Main() {
-        Item item1 = new Item("Apple", 5);
-        Item item2 = new Item("Banana", 10);
+    public static void main(String[] args) {
+        Inventory inventory = new Inventory();
+       
+        Fruit fruit = new Fruit("Apple", 100, "Fuji");
+        inventory.addItem(fruit);
 
+        Weapon weapon = new Weapon("Sword", 1, 10, 100);
+        inventory.addItem(weapon);
+
+        inventory.printInventory();
     }
-
-
 }

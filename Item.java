@@ -1,4 +1,4 @@
-public class Item {
+public abstract class Item {
     private String name;
     private int quantity;
 
@@ -14,4 +14,8 @@ public class Item {
     public int getQuantity() {
         return quantity;
     }
+
+    public abstract void displayItem();
+
+
 }

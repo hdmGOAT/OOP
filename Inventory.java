@@ -15,7 +15,7 @@ public class Inventory {
 
     public void printInventory() {
         for (Item item : items) {
-            System.out.println(item.getName() + ": " + item.getQuantity());
+            item.displayItem();
         }
     }
 
@@ -27,4 +27,5 @@ public class Inventory {
             }
         }
     }
+    
 }
